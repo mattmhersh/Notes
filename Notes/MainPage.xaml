@@ -8,7 +8,7 @@
                FontAttributes="Bold" />
         <Editor x:Name="editor"
                 Placeholder="Enter your note"
-                HeightRequest="100" />
+                HeightRequest="600" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
