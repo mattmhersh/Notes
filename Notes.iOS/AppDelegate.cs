@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 using Foundation;
 using UIKit;
 
@@ -24,6 +28,9 @@ namespace Notes.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            AppCenter.Start("2395c863-39e1-420c-8a18-08508301f38b",
+                               typeof(Analytics), typeof(Crashes));
 
             return base.FinishedLaunching(app, options);
         }
